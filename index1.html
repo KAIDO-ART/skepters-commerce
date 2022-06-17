@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account sign in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <img src="skep.png" alt="" class="logo">
+            <ul id="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="index1.html">Account</a></li>
+            </ul>
+            <button type="button" class="button1">CART</button>
+            <img src="menu.png" alt="" class="menu" onclick="toggmenu()">
+        </nav>
+    </div>
+    <!-- loginbox -->
+    <div class="login-box">
+        <h1>Login</h1>
+        <form>
+            <p>username</p>
+            <input type="text" name="" placeholder="Enter username">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter password">
+            <button type="button" class="btn">Submit</button><br>
+            <a href="">Forgot password?</a><br>
+            <a href="">Sign up</a>
+        </form>
+    </div>
+
+    <script>
+        
+        var menuitems = document.getElementById("menu-items");
+        menuitems.style.maxHeight = "0px";
+
+        function toggmenu(){
+            if(menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "200px"
+            }
+            else{
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
